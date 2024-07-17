@@ -24,6 +24,7 @@ struct CalculatorView: View {
                             .font(.system(size: 55))
                             .multilineTextAlignment(.trailing)
                             .padding(.trailing, 32)
+                       
                     }
                 }
                 .padding(.top, 16)
@@ -33,17 +34,17 @@ struct CalculatorView: View {
                     HStack {
                         
                         if deviceOrientation.isLandscape {
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "(", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: ")", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "mc", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "m+", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "m-", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "mr", backgroundColor: landscapeButtonsColor)
                         }
                         
                         CalculatorButtonComponent(title: "AC", backgroundColor: Color.gray, action: { self.calculator.clear() })
@@ -52,23 +53,23 @@ struct CalculatorView: View {
                         Spacer()
                         CalculatorButtonComponent(title: "%", backgroundColor: Color.gray, action: { self.calculator.inputOperation(.percent) })
                         Spacer()
-                        CalculatorButtonComponent(title: "/", backgroundColor: .orange, action: { self.calculator.inputOperation(.division) })
+                        CalculatorButtonComponent(title: "÷", backgroundColor: .orange, action: { self.calculator.inputOperation(.division) })
                     }
                     
                     HStack {
                         
                         if deviceOrientation.isLandscape {
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "2nd", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "x2", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "x3", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "xy", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "ex", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "10x", backgroundColor: landscapeButtonsColor)
                         }
                         
                         CalculatorButtonComponent(title: "7", action: { self.calculator.inputNumber("7") })
@@ -82,17 +83,17 @@ struct CalculatorView: View {
                     HStack {
                         
                         if deviceOrientation.isLandscape {
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "1/x", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "2√x", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "3√x", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "y√x", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "ln", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "log", backgroundColor: landscapeButtonsColor)
                         }
                         
                         CalculatorButtonComponent(title: "4", action: { self.calculator.inputNumber("4") })
@@ -107,17 +108,17 @@ struct CalculatorView: View {
                     HStack {
                         
                         if deviceOrientation.isLandscape {
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "x!", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "sin", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "cos", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "tan", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "e", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "EE", backgroundColor: landscapeButtonsColor)
                         }
                         
                         CalculatorButtonComponent(title: "1", action: { self.calculator.inputNumber("1") })
@@ -132,17 +133,17 @@ struct CalculatorView: View {
                     HStack {
                         
                         if deviceOrientation.isLandscape {
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "Rad", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "sinh", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "cosh", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "tanh", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "π", backgroundColor: landscapeButtonsColor)
                             Spacer()
-                            CalculatorButtonComponent(title: "7", backgroundColor: landscapeButtonsColor)
+                            CalculatorButtonComponent(title: "Rand", backgroundColor: landscapeButtonsColor)
                         }
                         
                         CalculatorButtonComponent(title: "0", action: { self.calculator.inputNumber("0") })
@@ -203,7 +204,7 @@ struct CalculatorButtonStyle: ButtonStyle {
             .background(configuration.isPressed ? backgroundColor.opacity(0.5) : backgroundColor)
             .foregroundColor(foregroundColor)
             .cornerRadius(cornerRadius)
-            .font(.system(size: 25))
+            .font(.system(size: 20))
             .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
             .animation(.easeInOut(duration: 0.2), value: configuration.isPressed)
     }
